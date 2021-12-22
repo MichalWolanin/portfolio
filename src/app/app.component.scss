@@ -1,0 +1,284 @@
+ .app-component {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #171C28;
+  }
+
+  .app-component__navbar {
+    width: 100%;
+    height: 16.5%;
+  }
+
+  .app-component__navbar-title {
+    position: absolute;
+    height: 149px;
+    margin-left: 55px;
+    display: flex;
+    align-items: center;
+    font-family: "Segoe Script";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 53px;
+    text-align: center;
+    color: #FFFFFF;
+
+  }
+
+  .app-component__navbar-buttons {
+    width: 100%;
+    font-size: 27px;
+    height: 16.5%;
+    color: #FFFFFF;
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    padding-right: 6.25%;
+    padding-top: 63px;
+    font-family: "Montserrat", serif;
+  }
+
+  .button {
+    margin-right: 44px;
+    cursor: pointer;
+  }
+
+  .app-component__container {
+    background-color: #171C28;
+  }
+
+  .app-component__main {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat", serif;
+    color: #FFFFFF;
+  }
+
+  .app-component__welcome {
+    font-size: 70px;
+    padding-bottom: 30px;
+  }
+
+  .app-component__content {
+    margin-top: 12%;
+    margin-left: 55px;
+  }
+
+  .app-component__description {
+    font-size: 30px;
+  }
+
+  .app-component__social-icons {
+    height: 36px;
+    margin-right: 37px;
+  }
+
+  .app-component__contact-button {
+    width: 230px;
+    height: 60px;
+    margin-top: 73px;
+    border-radius: 10px;
+    background-color: #55198B;
+    color: #FFFFFF;
+    font-family: "Montserrat", serif;
+    font-size: 23px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+  }
+
+  .app-component__photo {
+    border-radius: 500px;
+    width: 349px;
+    margin-right: 90px;
+  }
+
+  .app-component__skills {
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .app-component__skills-right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .app-component__skills-title {
+    font-size: 64px;
+    color: #FFFFFF;
+    font-family: "Montserrat", serif;
+  }
+
+  .app-component__skills-text {
+    font-size: 23px;
+    color: #FFFFFF;
+    font-family: "Montserrat", serif;
+    margin-top: 25px;
+  }
+
+  .app-component__skills-basic {
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: "Montserrat", serif;
+  }
+
+  .app-component__skills-images {
+    width: 600px;
+  }
+
+  .app-component__environments {
+    margin: 12px;
+    height: 55px;
+  }
+
+  .app-component__skills-basic-images {
+    margin-top: 35px;
+  }
+
+  .app-component__projects {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-component__projects-title {
+    margin-left: 60px;
+    font-size: 64px;
+    color: #FFFFFF;
+    font-family: "Montserrat", serif;
+  }
+
+  .app-component__projects-container {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .app-component__projects-container-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    left: 55px;
+    top: 307px;
+
+    background: #171C28;
+    mix-blend-mode: screen;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+  }
+
+  .app-component__projects-container-app-image {
+    width: 400px;
+    height: 350px;
+    margin-top: 30px;
+  }
+
+  .app-component__projects-container-app-btn {
+    width: 230px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 25px;
+    background: #55198B;
+    font-family: "Montserrat", serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+  }
+
+  .app-component__education {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20%;
+  }
+
+  .app-component__education-title {
+    font-size: 64px;
+    color: #FFFFFF;
+    font-family: "Montserrat", serif;
+  }
+
+  .app-component__education-image {
+    margin-top: 55px;
+  }
+
+  .app-component__education-main-text {
+    margin-top: 65px;
+    font-size: 27px;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-family: "Montserrat", serif;
+  }
+
+  .app-component__education-text {
+    margin-top: 30px;
+    font-size: 23px;
+    color: #FFFFFF;
+    font-family: "Montserrat", serif;
+  }
+
+  .app-component__education-certificates-text {
+    margin-top: 70px;
+    font-size: 27px;
+    color: #FFFFFF;
+    font-family: "Montserrat", serif;
+  }
+
+  .app-component__contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20%;
+    margin-bottom: 15%;
+  }
+
+  .app-component__contact-title {
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-family: "Montserrat", serif;
+  }
+
+  .app-component__contact-location {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-bottom: 200px;
+  }
+
+  .app-component__contact-location-place {
+    font-size: 27px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #FFFFFF;
+    font-family: "Montserrat", serif;
+  }
+
+  .app-component__contact-location-images {
+    margin-top: 80px;
+  }
+
+  .app-component__contact-end {
+    width: 350px;
+    margin-top: 5%;
+  }
+
