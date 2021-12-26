@@ -1,34 +1,57 @@
 @import 'src/css/mixins';
 
 .app-component {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #171C28;
-  }
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #171C28;
 
-.app-component__navbar {
+
+  .app-component__navbar {
     width: 100%;
     height: 16.5%;
+    display: flex;
+    justify-content: center;
+
+    @include desktop {
+      width: 100%;
+      height: unset;
+      display: unset;
+      justify-content: unset;
+    }
   }
 
   .app-component__navbar-title {
     position: absolute;
     height: 149px;
-    margin-left: 55px;
+    margin-left: unset;
     display: flex;
     align-items: center;
-    font-family: "Segoe Script";
+    font-family: 'Vujahday Script', cursive;
     font-style: normal;
     font-weight: normal;
-    font-size: 35px;
+    font-size: 50px;
     line-height: 53px;
     text-align: center;
     color: #FFFFFF;
+
+    @include desktop {
+      position: absolute;
+      height: 149px;
+      margin-left: 55px;
+      display: flex;
+      align-items: center;
+      font-family: 'Vujahday Script', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 50px;
+      line-height: 53px;
+      text-align: center;
+      color: #FFFFFF;
+    }
   }
 
   .app-component__navbar-buttons {
@@ -37,7 +60,6 @@
     @include desktop {
       width: 100%;
       font-size: 27px;
-      height: 16.5%;
       color: #FFFFFF;
       display: flex;
       position: absolute;
@@ -82,7 +104,7 @@
 
   .app-component__welcome {
     font-size: 30px;
-    padding-bottom: 30px;
+    padding-bottom: unset;
     display: flex;
     justify-content: center;
 
@@ -108,17 +130,28 @@
 
   .app-component__description {
     font-size: 20px;
+    font-style: normal;
     text-align: center;
+    width: 300px;
+    line-height: 24px;
+    letter-spacing: 0.6px;
 
     @include desktop {
       font-size: 30px;
       text-align: left;
+      line-height: unset;
+      width: 750px;
     }
   }
 
   .app-component__social-icons {
     height: 36px;
-    margin-right: 37px;
+    margin-right: 25px;
+
+    @include desktop {
+      height: 36px;
+      margin-right: 37px;
+    }
   }
 
   .app-component__contact-button {
@@ -164,13 +197,33 @@
   .app-component__skills-right {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 20px;
+
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+    }
+  }
+
+  .app-component__skills-left {
+    margin-left: 70px;
+
+    @include desktop {
+      margin-left: unset;
+    }
   }
 
   .app-component__skills-title {
-    font-size: 64px;
+    font-size: 30px;
     color: #FFFFFF;
     font-family: "Montserrat", serif;
+
+    @include desktop {
+      font-size: 64px;
+      color: #FFFFFF;
+      font-family: "Montserrat", serif;
+    }
   }
 
   .app-component__skills-text {
@@ -180,6 +233,10 @@
     margin-top: 25px;
   }
 
+  .app-component__skills-text-container {
+    width: 400px;
+  }
+
   .app-component__skills-basic {
     font-size: 30px;
     color: #FFFFFF;
@@ -187,12 +244,21 @@
   }
 
   .app-component__skills-images {
-    width: 600px;
+    width: 400px;
+
+    @include desktop {
+      width: 600px;
+    }
   }
 
   .app-component__environments {
-    margin: 12px;
+    margin: 8px;
     height: 55px;
+
+    @include desktop {
+      margin: 12px;
+      height: 55px;
+    }
   }
 
   .app-component__skills-basic-images {
@@ -213,10 +279,17 @@
   }
 
   .app-component__projects-title {
-    margin-left: 60px;
+    margin-left: unset;
     font-size: 64px;
     color: #FFFFFF;
     font-family: "Montserrat", serif;
+
+    @include desktop {
+      margin-left: 60px;
+      font-size: 64px;
+      color: #FFFFFF;
+      font-family: "Montserrat", serif;
+    }
   }
 
   .app-component__projects-container {
@@ -227,9 +300,12 @@
 
     @include desktop {
       margin-top: 75px;
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
       flex-direction: row;
-      justify-content: space-around;
+      flex-wrap: wrap;
+      justify-content: flex-start;
     }
   }
 
@@ -237,10 +313,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 600px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     left: 55px;
     top: 307px;
+    margin-bottom: 20px;
 
     background: #171C28;
     mix-blend-mode: screen;
@@ -248,12 +325,36 @@
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
+
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 600px;
+      height: 500px;
+      left: 55px;
+      top: 307px;
+      margin-bottom: unset;
+
+      background: #171C28;
+      mix-blend-mode: screen;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+    }
   }
 
   .app-component__projects-container-app-image {
-    width: 400px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     margin-top: 30px;
+
+    @include desktop {
+      width: 400px;
+      height: 350px;
+      margin-top: 30px;
+    }
   }
 
   .app-component__projects-container-app-btn {
@@ -275,7 +376,7 @@
     flex-direction: column;
     justify-content: space-around;
     margin-top: 20%;
-    margin-left: 70px;
+    margin-left: 20px;
 
     @include desktop {
       display: flex;
@@ -287,36 +388,71 @@
   }
 
   .app-component__education-title {
-    font-size: 64px;
+    font-size: 40px;
     color: #FFFFFF;
     font-family: "Montserrat", serif;
     margin-top: 20px;
+
+    @include desktop {
+      font-size: 64px;
+      color: #FFFFFF;
+      font-family: "Montserrat", serif;
+      margin-top: 20px;
+    }
   }
 
   .app-component__education-image {
-    margin-top: 55px;
+    margin-top: 20px;
+    width: 250px;
+
+    @include desktop {
+      margin-top: 55px;
+      width: unset;
+    }
   }
 
   .app-component__education-main-text {
-    margin-top: 65px;
-    font-size: 27px;
+    margin-top: 30px;
+    font-size: 20px;
     font-weight: 700;
     color: #FFFFFF;
     font-family: "Montserrat", serif;
+
+    @include desktop {
+      margin-top: 65px;
+      font-size: 27px;
+      font-weight: 700;
+      color: #FFFFFF;
+      font-family: "Montserrat", serif;
+    }
   }
 
   .app-component__education-text {
     margin-top: 30px;
-    font-size: 23px;
+    font-size: 18px;
     color: #FFFFFF;
     font-family: "Montserrat", serif;
+
+    @include desktop {
+      margin-top: 30px;
+      font-size: 23px;
+      color: #FFFFFF;
+      font-family: "Montserrat", serif;
+    }
   }
 
   .app-component__education-certificates-text {
-    margin-top: 70px;
-    font-size: 27px;
+    margin-top: 30px;
+    font-size: 18px;
     color: #FFFFFF;
     font-family: "Montserrat", serif;
+
+    @include desktop {
+      margin-top: 70px;
+      font-size: 27px;
+      color: #FFFFFF;
+      font-family: "Montserrat", serif;
+    }
   }
 
   .app-component__contact {
@@ -338,29 +474,55 @@
   }
 
   .app-component__contact-title {
-    font-size: 64px;
+    font-size: 50px;
     font-weight: 700;
     color: #FFFFFF;
     font-family: "Montserrat", serif;
+
+    @include desktop {
+      font-size: 64px;
+      font-weight: 700;
+      color: #FFFFFF;
+      font-family: "Montserrat", serif;
+    }
   }
 
   .app-component__contact-location {
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-bottom: 200px;
+
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      margin-top: 150px;
+      margin-bottom: 200px;
+    }
   }
 
   .app-component__contact-location-place {
     font-size: 27px;
     font-weight: 700;
-    margin-left: 10px;
+    margin-left: unset;
     color: #FFFFFF;
     font-family: "Montserrat", serif;
+
+    @include desktop {
+      font-size: 27px;
+      font-weight: 700;
+      margin-left: 10px;
+      color: #FFFFFF;
+      font-family: "Montserrat", serif;
+    }
   }
 
   .app-component__contact-location-images {
-    margin-top: 80px;
+    margin-top: 30px;
+
+    @include desktop {
+      margin-top: 80px;
+    }
   }
 
   .app-component__contact-end {
@@ -372,4 +534,5 @@
       display: flex;
     }
   }
+}
 
