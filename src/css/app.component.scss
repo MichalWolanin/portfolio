@@ -252,6 +252,7 @@
 
   .app-component__skills-images {
     width: 375px;
+    margin-left: 50px;
 
     @include desktop {
       width: 600px;
@@ -260,7 +261,7 @@
 
   .app-component__environments {
     margin: 8px;
-    height: 55px;
+    height: 45px;
 
     @include desktop {
       margin: 12px;
@@ -321,7 +322,7 @@
     flex-direction: column;
     align-items: center;
     width: 320px;
-    height: 440px;
+    height: 400px;
     left: 55px;
     top: 307px;
     margin-bottom: 20px;
@@ -353,8 +354,8 @@
   }
 
   .app-component__projects-container-app-image {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin-top: 30px;
 
     @include desktop {
