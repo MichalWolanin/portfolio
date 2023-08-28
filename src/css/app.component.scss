@@ -7,7 +7,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #171C28;
+  background-color: #0C424D;
 
 
   .app-component__navbar {
@@ -36,7 +36,7 @@
     font-size: 40px;
     line-height: 53px;
     text-align: center;
-    color: #FFFFFF;
+    color: #6CC4D5;
 
     @include desktop {
       position: absolute;
@@ -50,7 +50,7 @@
       font-size: 50px;
       line-height: 53px;
       text-align: center;
-      color: #FFFFFF;
+      color: #6CC4D5;
     }
   }
 
@@ -60,7 +60,7 @@
     @include desktop {
       width: 100%;
       font-size: 27px;
-      color: #FFFFFF;
+      color: #6CC4D5;
       display: flex;
       position: absolute;
       box-sizing: border-box;
@@ -77,7 +77,7 @@
   }
 
   .app-component__container {
-    background-color: #171C28;
+    background-color: #0C424D;
   }
 
   .app-component__main {
@@ -88,18 +88,18 @@
     justify-content: space-between;
     align-items: center;
     font-family: "Montserrat", serif;
-    color: #FFFFFF;
+    color: #6CC4D5;
 
     @include desktop {
       display: flex;
       width: unset;
       margin: 82px auto 32px;
-      padding: unset;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       font-family: "Montserrat", serif;
-      color: #FFFFFF;
+      color: #6CC4D5;
+      padding: 75px;
     }
   }
 
@@ -160,8 +160,8 @@
     height: 60px;
     margin-top: 73px;
     border-radius: 10px;
-    background-color: #55198B;
-    color: #FFFFFF;
+    background-color: #102D33;
+    color: #6CC4D5;
     font-family: "Montserrat", serif;
     font-size: 23px;
     font-weight: 500;
@@ -170,12 +170,11 @@
   }
 
   .app-component__photo {
-    border-radius: 500px;
+    background-image: url("/src/assets/images/profilowe.png");
     width: 200px;
 
     @include desktop {
-      border-radius: 500px;
-      width: 349px;
+      width: 400px;
       margin-right: 90px;
     }
   }
@@ -222,19 +221,19 @@
 
   .app-component__skills-title {
     font-size: 30px;
-    color: #FFFFFF;
+    color: #6CC4D5;
     font-family: "Montserrat", serif;
 
     @include desktop {
       font-size: 64px;
-      color: #FFFFFF;
+      color: #6CC4D5;
       font-family: "Montserrat", serif;
     }
   }
 
   .app-component__skills-text {
     font-size: 23px;
-    color: #FFFFFF;
+    color: #6CC4D5;
     font-family: "Montserrat", serif;
     margin-top: 25px;
     margin-left: 20px;
@@ -246,7 +245,7 @@
 
   .app-component__skills-basic {
     font-size: 30px;
-    color: #FFFFFF;
+    color: #6CC4D5;
     font-family: "Montserrat", serif;
   }
 
@@ -274,112 +273,6 @@
     margin-top: 35px;
   }
 
-  .app-component__projects {
-    margin-top: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @include desktop {
-      margin-top: 20%;
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  .app-component__projects-title {
-    margin-left: unset;
-    font-size: 64px;
-    color: #FFFFFF;
-    font-family: "Montserrat", serif;
-
-    @include desktop {
-      margin-left: 60px;
-      font-size: 64px;
-      color: #FFFFFF;
-      font-family: "Montserrat", serif;
-    }
-  }
-
-  .app-component__projects-container {
-    margin-top: 75px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-    @include desktop {
-      margin-top: 75px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 30px;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-    }
-  }
-
-  .app-component__projects-container-app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 320px;
-    height: 400px;
-    left: 55px;
-    top: 307px;
-    margin-bottom: 20px;
-
-    background: #171C28;
-    mix-blend-mode: screen;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-
-    @include desktop {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 600px;
-      height: 500px;
-      left: 55px;
-      top: 307px;
-      margin-bottom: unset;
-
-      background: #171C28;
-      mix-blend-mode: screen;
-      border: 1px solid #000000;
-      box-sizing: border-box;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
-    }
-  }
-
-  .app-component__projects-container-app-image {
-    width: 250px;
-    height: 250px;
-    margin-top: 30px;
-
-    @include desktop {
-      width: 400px;
-      height: 350px;
-      margin-top: 30px;
-    }
-  }
-
-  .app-component__projects-container-app-btn {
-    width: 230px;
-    height: 60px;
-    border-radius: 10px;
-    margin-top: 25px;
-    background: #55198B;
-    font-family: "Montserrat", serif;
-    font-size: 23px;
-    font-weight: 600;
-    color: #FFFFFF;
-    border: none;
-    cursor: pointer;
-  }
-
   .app-component__education {
     display: flex;
     flex-direction: column;
@@ -400,13 +293,13 @@
 
   .app-component__education-title {
     font-size: 40px;
-    color: #FFFFFF;
+    color: #6CC4D5;
     font-family: "Montserrat", serif;
     margin-top: 20px;
 
     @include desktop {
       font-size: 64px;
-      color: #FFFFFF;
+      color: #6CC4D5;
       font-family: "Montserrat", serif;
       margin-top: 20px;
     }
@@ -426,14 +319,14 @@
     margin-top: 30px;
     font-size: 20px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #6CC4D5;
     font-family: "Montserrat", serif;
 
     @include desktop {
       margin-top: 65px;
       font-size: 27px;
       font-weight: 700;
-      color: #FFFFFF;
+      color: #6CC4D5;
       font-family: "Montserrat", serif;
     }
   }
@@ -441,13 +334,13 @@
   .app-component__education-text {
     margin-top: 30px;
     font-size: 18px;
-    color: #FFFFFF;
+    color: #6CC4D5;
     font-family: "Montserrat", serif;
 
     @include desktop {
       margin-top: 30px;
       font-size: 23px;
-      color: #FFFFFF;
+      color: #6CC4D5;
       font-family: "Montserrat", serif;
     }
   }
@@ -455,14 +348,27 @@
   .app-component__education-certificates-text {
     margin-top: 30px;
     font-size: 18px;
-    color: #FFFFFF;
+    color: #6CC4D5;
     font-family: "Montserrat", serif;
 
     @include desktop {
       margin-top: 70px;
       font-size: 27px;
-      color: #FFFFFF;
+      color: #6CC4D5;
       font-family: "Montserrat", serif;
+    }
+  }
+
+  .app-component__experience-image {
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 10px;
+
+    @include desktop {
+      margin-top: 55px;
+      width: 300px;
+      border-radius: 10px;
+
     }
   }
 
@@ -487,13 +393,13 @@
   .app-component__contact-title {
     font-size: 50px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #6CC4D5;
     font-family: "Montserrat", serif;
 
     @include desktop {
       font-size: 64px;
       font-weight: 700;
-      color: #FFFFFF;
+      color: #6CC4D5;
       font-family: "Montserrat", serif;
     }
   }
@@ -516,14 +422,14 @@
     font-size: 27px;
     font-weight: 700;
     margin-left: unset;
-    color: #FFFFFF;
+    color: #6CC4D5;
     font-family: "Montserrat", serif;
 
     @include desktop {
       font-size: 27px;
       font-weight: 700;
       margin-left: 10px;
-      color: #FFFFFF;
+      color: #6CC4D5;
       font-family: "Montserrat", serif;
     }
   }

@@ -3,7 +3,7 @@
     <span (click)="scroll(main)" class="app-component__navbar-title" data-text="< Michał Wolanin />">&lt; Michał Wolanin /&gt;</span>
     <div class="app-component__navbar-buttons">
       <div (click)="scroll(skills)" class="button">Skills</div>
-      <div (click)="scroll(projects)" class="button">Projects</div>
+      <div (click)="scroll(skills)" class="button">Projects</div>
       <div (click)="scroll(education)" class="button">Education</div>
       <div style="cursor: pointer" (click)="scroll(contact)">Contact Me</div>
   </div>
@@ -19,32 +19,23 @@
         <div>
           <a href="https://github.com/MichalWolanin"><img src="./assets/icons/github.png" alt="github" class="app-component__social-icons"></a>
           <a href="https://www.linkedin.com/in/michal-wolanin/"><img src="./assets/icons/linkedin.png" alt="linkedin" class="app-component__social-icons"></a>
-          <a href="https://twitter.com/Michael_wolanin"><img src="./assets/icons/twitter.png" alt="twitter" class="app-component__social-icons"></a>
+          <a href="https://twitter.com/Michael_wolanin"><img src="./assets/icons/X.png" alt="X" class="app-component__social-icons"></a>
           <a href="https://www.instagram.com/michal_wolanin/"><img src="./assets/icons/instagram.png" alt="instagram" class="app-component__social-icons"></a>
-          <a href="https://www.facebook.com/WolaninMichal"><img src="./assets/icons/facebook.png" alt="facebook" class="app-component__social-icons"></a>
         </div>
         <div>
           <button (click)="scroll(contact)" class="app-component__contact-button"> CONTACT ME </button>
         </div>
       </div>
-      <img src="./assets/images/profilowe.jpg" alt="profil" class="app-component__photo">
+      <img src="./assets/images/profilowe.png" alt="profil" class="app-component__photo">
     </div>
     <div class="app-component__skills" #skills>
       <div class="app-component__skills-left">
         <div class="app-component__skills-title">What I do</div>
         <div class="app-component__skills-images">
           <img src="./assets/icons/html.png" alt="html" class="app-component__environments">
-          <img src="./assets/icons/css.png" alt="css" class="app-component__environments">
           <img src="./assets/icons/sass.png" alt="sass" class="app-component__environments">
           <img src="./assets/icons/angular.png" alt="angular" class="app-component__environments">
-          <img src="./assets/icons/js.png" alt="javascript" class="app-component__environments">
           <img src="./assets/icons/ts.png" alt="typescript" class="app-component__environments">
-          <img src="./assets/icons/wordpress.png" alt="wordpress" class="app-component__environments">
-          <img src="./assets/icons/bootstrap.png" alt="bootstrap" class="app-component__environments">
-          <img src="./assets/icons/jira.png" alt="jira" class="app-component__environments">
-          <img src="./assets/icons/webstorm.png" alt="webstorm" class="app-component__environments">
-          <img src="./assets/icons/git.png" alt="git" class="app-component__environments">
-          <img src="./assets/icons/figma.png" alt="figma" class="app-component__environments">
         </div>
         <div class="app-component__skills-text-container">
           <p class="app-component__skills-text">🔥 Develop highly interactive Front end / User
@@ -57,28 +48,12 @@
         <div class="app-component__skills-basic">Basic knowledge</div>
         <div class="app-component__skills-basic-images">
           <img src="./assets/icons/c++.png" alt="c++" class="app-component__environments">
-          <img src="./assets/icons/spring.png" alt="spring" class="app-component__environments">
-        </div>
-      </div>
-
-    </div>
-    <div class="app-component__projects" #projects>
-      <div class="app-component__projects-title">Projects</div>
-      <div class="app-component__projects-container">
-        <div class="app-component__projects-container-app">
-          <img src="./assets/images/logo512.png" alt="5minutesforspine" class="app-component__projects-container-app-image">
-          <button (click)="firstProject('https://www.5minutesforspine.com/')" class="app-component__projects-container-app-btn">Visit Website</button>
-        </div>
-        <div class="app-component__projects-container-app">
-          <img src="./assets/images/planes.png" alt="planes" class="app-component__projects-container-app-image">
-          <button (click)="secondProject('https://michalwolanin.github.io/planes/login')" class="app-component__projects-container-app-btn">Visit Website</button>
-        </div>
-        <div class="app-component__projects-container-app">
-          <img src="./assets/images/szkola.png" alt="Publiczna Szkoła Podstawowa im. Ofiar Katynia w Potoku Wielkim" class="app-component__projects-container-app-image">
-          <button (click)="secondProject('http://www.psppotokwielki.pl/')" class="app-component__projects-container-app-btn">Visit Website</button>
+          <!--todo: change flutter icon-->
+          <img src="./assets/icons/flutter.png" alt="flutter" class="app-component__environments">
         </div>
       </div>
     </div>
+    <app-projects></app-projects>
 
     <div class="app-component__education" #education>
       <div>
@@ -91,10 +66,10 @@
           <br>of computer science</div>
       </div>
       <div>
-        <div class="app-component__education-title">Certificates</div>
-        <div class="app-component__education-certificates-text">Kurs Angular - profesjonalne techniki pracy</div>
-        <div class="app-component__education-certificates-text">Ekspresowe tworzenie stron z Bootstrap
-          & LESS</div>
+        <div class="app-component__education-title">Experience</div>
+        <img src="./assets/images/ttms.jpg" alt="Transition Technologies MS" class="app-component__experience-image">
+        <div class="app-component__education-certificates-text">TTMS - FRONTEND DEVELOPER </div>
+        <div class="app-component__education-certificates-text">January 2022 - Currently </div>
       </div>
     </div>
     <div class="app-component__contact" #contact>
@@ -105,7 +80,7 @@
               <div class="app-component__contact-location-images">
                 <a href="https://github.com/MichalWolanin"><img src="./assets/icons/github.png" alt="github" class="app-component__social-icons"></a>
                 <a href="https://www.linkedin.com/in/michal-wolanin/"><img src="./assets/icons/linkedin.png" alt="linkedin" class="app-component__social-icons"></a>
-                <a href="https://twitter.com/Michael_wolanin"><img src="./assets/icons/twitter.png" alt="twitter" class="app-component__social-icons"></a>
+                <a href="https://twitter.com/Michael_wolanin"><img src="./assets/icons/X.png" alt="X" class="app-component__social-icons"></a>
                 <a href="mailto:michalwolanin02@gmail.com"><img src="./assets/icons/gmail.png" alt="gmail" class="app-component__social-icons"></a>
               </div>
           </div>

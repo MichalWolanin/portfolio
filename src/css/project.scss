@@ -1,0 +1,135 @@
+@import 'mixins';
+
+.app-project__projects-container-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  height: 600px;
+  left: 55px;
+  top: 307px;
+  margin-bottom: 20px;
+
+  background: #171C28;
+  mix-blend-mode: screen;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 800px;
+    left: 55px;
+    top: 307px;
+
+    background: #171C28;
+    mix-blend-mode: screen;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+  }
+}
+
+.app-project__projects-titles {
+  margin-left: unset;
+  margin-top: 30px;
+  font-size: 28px;
+  color: #6CC4D5;
+  font-family: "Montserrat", serif;
+
+  @include desktop {
+    margin-top: 30px;
+    font-size: 38px;
+    color: #6CC4D5;
+    font-family: "Montserrat", serif;
+  }
+}
+
+.app-project__projects-container-app-image {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  border-radius: 15px;
+
+  @include desktop {
+    width: 300px;
+    height: 280px;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+}
+
+.app-project__projects-container-app-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  height: 400px;
+  left: 55px;
+  top: 307px;
+  margin-bottom: 20px;
+
+  background: #171C28;
+  mix-blend-mode: screen;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    left: 55px;
+    top: 307px;
+  }
+}
+
+.app-project__projects-container-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.app-project__projects-container-app-btn {
+  width: 230px;
+  height: 60px;
+  border-radius: 10px;
+  margin-top: 25px;
+  background: #102D33;
+  font-family: "Montserrat", serif;
+  font-size: 23px;
+  font-weight: 600;
+  color: #6CC4D5;
+  border: none;
+  cursor: pointer;
+}
+.app-project__projects-container-app-close {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin-top: 25px;
+  background: #102D33;
+  border: none;
+  cursor: pointer;
+}
+
+.app-project__stack-container {
+  display: flex;
+}
+
+.app-project__tech-stack {
+  background: #000000;
+  border-radius: 10px;
+  margin: 10px;
+  color: #6CC4D5;
+  width: 120%;
+  font-family: "Montserrat", serif;
+  font-size: 15px;
+}
